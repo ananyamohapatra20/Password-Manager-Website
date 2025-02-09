@@ -18,8 +18,10 @@ const Navbar = () => {
             </li>
         </ul> */}
         <div className='flex'>
+          <a 
+          href="https://github.com/ananyamohapatra20/Password-Manager-Website" target="_blank">
           <button className='bg-purple-400 border-2 text-shadow-md px-3 py-1.5 text-sm font-bold flex items-center rounded-full text-black text-bold hover:bg-purple-500 hover:text-black hover:shadow-lg transition-all md:px-5 md:py-2.5 md:text-base md:mr-40'>
-           Github <img className="w-4 ml-2 md:w-6"src="icons/github-logo.png" alt="gihub"/></button>
+           Github <img className="w-4 ml-2 md:w-6"src="icons/github-logo.png" alt="gihub"/></button></a>
         </div> 
         
       

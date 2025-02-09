@@ -40,6 +40,16 @@ const Manager = () => {
     setPasswordArray(updatedPasswords);
     localStorage.setItem("passwords", JSON.stringify(updatedPasswords));
     setForm({ site: "", username: "", password: "" })
+    toast.success('Password Saved Succesfully!', {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
   };
 
   const deletePassword = (id) => {
@@ -49,15 +59,15 @@ const Manager = () => {
     if(isConfirm){
       setPasswordArray(passwordArray.filter(item=>item.id !== id));
       localStorage.setItem("passwords", JSON.stringify(passwordArray.filter(item=>item.id!==id)));
-      toast('Password Saved Successfully!', {
-        position: "top-right",
-        autoClose: 5000,
+      toast('Password Deleted!', {
+        position: "top-center",
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: false,
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "light"
+        theme: "dark",
         });
     
     } 
