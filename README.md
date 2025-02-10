@@ -25,9 +25,5 @@ A simple **React-based Password Manager** to save, edit, and delete your passwor
 
 ---
 
-## 🚀 Getting Started  
-
-### 1️⃣ Clone the Repo  
-```bash
 git clone https://github.com/your-username/password-manager.git
 cd password-manager
